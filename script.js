@@ -12,7 +12,7 @@ function Employee(name, age, jobTitle) {
 	Person.call(this,name,age);
 	this.jobTitle=jobTitle;
 }
-Employee.prototye.__proto__=Person.prototype;
+Employee.prototype.__proto__=Person.prototype;
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
